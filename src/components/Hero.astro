@@ -1,0 +1,31 @@
+---
+import Layout from "../layouts/Layout.astro";
+import placeholderHero from '../assets/placeholder-hero.png';
+import LinkedinIcon from '../assets/linkedin.svg'
+import GithubIcon from '../assets/github_light.svg'
+import CvIcon from '../assets/cv.svg'
+import './src/styles/global.css';
+
+const a = "p-20 bg-pink"
+---
+
+<Layout>
+    <section class="h-180 relative overflow-hidden p-4">
+        <div class="bg-primary size-80 blur-3xl rounded-full relative right-30 bottom-30 -z-0"></div>
+        <div class="w-full z-20 absolute flex flex-col justify-center top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+        <h3 class="font-light text-center text-white z-20">DEVELOPER | UX/UI DESIGNER</h3>
+        <h1 class="tracking-tighter font-medium text-4xl text-center text-white z-10">Gustavo Torres</h1>
+        </div>
+
+        <article class="absolute bottom-12 translate-x-[-3%]  z-10 flex flex-col justify-center">
+            <div class="flex flex-row justify-center ">
+                <a href={} class=""><img src={CvIcon} alt="Icono CV"></a>
+                <a href=""><img src={GithubIcon} alt="Icono GitHub"></a>
+                <a href=""><img src={LinkedinIcon} alt="Icono Linkedin"></a>
+            </div>
+            <p class="text-center">¡Hola! soy gustavo torres (@_tavoserrot) diseñador web y desarrollador front—end junior  en colombia</p>
+        </article>
+        <div class="bg-primary size-80 blur-3xl rounded-full relative left-30 top-20 -z-0"></div>
+       <!--  <img src={placeholderHero.src} alt="Placeholder Hero" class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]"> -->
+    </section>
+</Layout>

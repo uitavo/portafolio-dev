@@ -1,1 +1,10 @@
 @import "tailwindcss";
+@import '@fontsource-variable/space-grotesk';
+
+@theme{
+    --color-primary: #BE132D;
+    --color-secondary: #360509;
+    --default-font-family: 'Space Grotesk Variable', sans-serif;
+    
+}
+
